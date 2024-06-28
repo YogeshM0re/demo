@@ -1,0 +1,81 @@
+.login-container {
+     max-width: 400px;
+     margin: 0 auto;
+     padding: 20px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     background-color: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+     from {
+          transform: translateY(-20px);
+          opacity: 0;
+     }
+
+     to {
+          transform: translateY(0);
+          opacity: 1;
+     }
+}
+
+input[type="email"],
+input[type="password"],
+button {
+     display: block;
+     width: 100%;
+     margin-bottom: 10px;
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     box-sizing: border-box;
+     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+button:focus {
+     border-color: #007bff;
+     box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+
+.button-group {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 20px;
+}
+
+button {
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 3px;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+     background-color: #0056b3;
+     transform: scale(1.05);
+}
+
+.error {
+     color: red;
+     font-size: 14px;
+     margin-bottom: 10px;
+     animation: fadeInOut 0.5s ease infinite;
+}
+
+@keyframes fadeInOut {
+
+     0%,
+     100% {
+          opacity: 0;
+     }
+
+     50% {
+          opacity: 1;
+     }
+}

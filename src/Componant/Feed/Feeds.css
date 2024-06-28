@@ -1,0 +1,110 @@
+.feeds-container {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #f4f4f4;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+     0% {
+          transform: translateY(-20px);
+          opacity: 0;
+     }
+
+     100% {
+          transform: translateY(0);
+          opacity: 1;
+     }
+}
+
+.feeds-heading {
+     font-size: 24px;
+     margin-bottom: 20px;
+     text-align: center;
+     animation: fadeInDown 0.5s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+     0% {
+          opacity: 0;
+          transform: translateY(-20px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+.textarea-container {
+     position: relative;
+
+     animation: fadeInUp 0.5s ease-out forwards;
+     width: 85%;
+     margin: 0 auto;
+     margin-bottom: 20px;
+
+}
+
+.textarea-container:focus {
+     border-color: #007bff;
+     box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+
+.textarea-container textarea {
+     width: 100%;
+     height: 100px;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     resize: none;
+     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textarea-container textarea:focus {
+     border-color: #007bff;
+     box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+
+.button-container {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+     animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+     0% {
+          opacity: 0;
+          transform: translateY(20px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+.post-button,
+.view-my-posts,
+.view-other-posts {
+     margin: 0 10px;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     background-color: #007bff;
+     color: white;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.post-button:hover,
+.view-my-posts:hover,
+.view-other-posts:hover {
+     background-color: #0056b3;
+     transform: scale(1.05);
+}

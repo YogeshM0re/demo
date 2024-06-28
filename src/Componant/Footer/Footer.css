@@ -1,0 +1,47 @@
+.footer {
+     text-align: center;
+     padding: 1rem;
+     background: linear-gradient(to right, #69cff1, #a9f0f5);
+     color: white;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     animation: slideInUp 1s ease forwards;
+     position: relative;
+}
+
+.footer p {
+     margin: 0;
+     animation: fadeIn 1s ease forwards;
+}
+
+@keyframes slideInUp {
+     from {
+          opacity: 0;
+          transform: translateY(20px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
+
+.footer a {
+     color: white;
+     text-decoration: none;
+     transition: color 0.3s ease;
+}
+
+.footer a:hover {
+     color: #c8e6c9;
+}

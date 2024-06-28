@@ -1,0 +1,26 @@
+.logout-button {
+     max-width: 100px;
+     background: linear-gradient(to right, #ff6347, #ff4500);
+     color: #fff;
+     border: none;
+     padding: 8px 16px;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+     animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
+
+.logout-button:hover {
+     background-color: #eb5823;
+     transform: scale(1.05);
+}
